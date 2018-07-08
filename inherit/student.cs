@@ -31,13 +31,9 @@ namespace inheritOverride
         {
             Id = id;
         }
-        public void Display()
+        public override string display()
         {
-            Console.WriteLine($"\n  FullName: {FullName} \n Age: {Age} \n Id:{Id}\n ezdevaj:{Ezdevaj} ");
-        }
-        public override string ToString()
-        {
-            return string.Format($"\n  FullName: {FullName} \n Age: {Age} \n Id:{Id}\n ezdevaj:{Ezdevaj} ");
+            return ($"\n student :\n  FullName: {FullName} \n Age: {Age} \n Id:{Id}\n ezdevaj:{Ezdevaj} ");
         }
     }
 }

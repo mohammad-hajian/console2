@@ -13,9 +13,9 @@ namespace inheritOverride
             person person1 = new person(22, "mohsen", enamezdevaj.mojarad);
             teacher teacher1 = new teacher(90, 27, "ali", enamezdevaj.moteahel);
             student student1 = new student(94, 21, "mohammad", enamezdevaj.mojarad);
-            person1.display();
-            teacher1.display();
-            student1.display();
+            Console.WriteLine(person1.display());
+            Console.WriteLine(teacher1.display()); 
+            Console.WriteLine(student1.display()); 
 
             Console.WriteLine("----------------------");
             person[] p1 = new person[]
@@ -30,14 +30,11 @@ namespace inheritOverride
             //p2[3] = new teacher(90, 27, "ali", enamezdevaj.moteahel);
             #endregion یا از روش زیر
 
+            
             foreach (person p in p1)
             {
-                Console.WriteLine(p);
-            }//روش اور راید
-            foreach (person p in p1)
-            {
-                p.display();
-            }//روش عادی خخخخ
+                Console.WriteLine(p.display());
+            }
         }
     }
 }

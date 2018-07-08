@@ -16,14 +16,12 @@ namespace inheritOverride
         {
             Tid = tid;
         }
-        public override void display()
-        {
-            Console.WriteLine($"\n teacher : \n FullName: {FullName} \n Age: {Age} \n Tid:{Tid}\n ezdevaj:{Ezdevaj} ");
-        }
 
-        public override string ToString()
+        public override string display()
         {
-            return string.Format($"\n teacher : \n FullName: {FullName} \n Age: {Age} \n Tid:{Tid}\n ezdevaj:{Ezdevaj} ");
+           return base.display();//override to father
+            //یا بالایی کار میکنه یا پایینی
+           return ($"\n teacher :\n  FullName: {FullName} \n Age: {Age} \n Id:{Tid}\n ezdevaj:{Ezdevaj} ");
         }
     }
 }

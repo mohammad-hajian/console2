@@ -24,13 +24,9 @@ namespace inheritOverride
         public int Age { get; set; }
         public string FullName { get; set; }
         public enamezdevaj Ezdevaj { get; set; }
-        public virtual void display()
+        public virtual string display()
         {
-            Console.WriteLine($"person : \n FullName: {FullName} \n Age: {Age} \n ezdevaj:{Ezdevaj} ");
-        }
-        public override string ToString()
-        {
-            return string.Format($"person : \n FullName: {FullName} \n Age: {Age} \n ezdevaj:{Ezdevaj} ");
+            return ($"\n person :\n  FullName: {FullName} \n Age: {Age} \n ezdevaj:{Ezdevaj} ");
         }
     }
 }
