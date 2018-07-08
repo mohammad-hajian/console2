@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace inheritCast
+namespace inherit
 {
     enum enamezdevaj
     {
@@ -27,6 +27,10 @@ namespace inheritCast
         public virtual void display()
         {
             Console.WriteLine($"person : \n FullName: {FullName} \n Age: {Age} \n ezdevaj:{Ezdevaj} ");
+        }
+        public override string ToString()
+        {
+            return string.Format($"person : \n FullName: {FullName} \n Age: {Age} \n ezdevaj:{Ezdevaj} ");
         }
     }
 }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace inheritCast
+namespace inherit
 {
     class teacher :person
     {
@@ -19,6 +19,11 @@ namespace inheritCast
         public override void display()
         {
             Console.WriteLine($"\n teacher : \n FullName: {FullName} \n Age: {Age} \n Tid:{Tid}\n ezdevaj:{Ezdevaj} ");
+        }
+
+        public override string ToString()
+        {
+            return string.Format($"\n teacher : \n FullName: {FullName} \n Age: {Age} \n Tid:{Tid}\n ezdevaj:{Ezdevaj} ");
         }
     }
 }

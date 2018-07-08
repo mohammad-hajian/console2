@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace inheritCast
+namespace inherit
 {
     class student:person
     {
@@ -18,6 +18,8 @@ namespace inheritCast
             throw new NotImplementedException();
         }
 
+
+
         /// <summary>
         ///  آیدی و سن و نام و وضعیت تعهل
         /// </summary>
@@ -29,9 +31,13 @@ namespace inheritCast
         {
             Id = id;
         }
-        public void display()
+        public void Display()
         {
-            Console.WriteLine($" FullName: {FullName} \n Age: {Age} \n Id:{Id}\n ezdevaj:{Ezdevaj} ");
+            Console.WriteLine($"\n  FullName: {FullName} \n Age: {Age} \n Id:{Id}\n ezdevaj:{Ezdevaj} ");
+        }
+        public override string ToString()
+        {
+            return string.Format($"\n  FullName: {FullName} \n Age: {Age} \n Id:{Id}\n ezdevaj:{Ezdevaj} ");
         }
     }
 }
