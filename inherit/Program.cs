@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace inherit
+namespace inheritOverride
 {
     class Program
     {
@@ -33,7 +33,11 @@ namespace inherit
             foreach (person p in p1)
             {
                 Console.WriteLine(p);
-            }
+            }//روش اور راید
+            foreach (person p in p1)
+            {
+                p.display();
+            }//روش عادی خخخخ
         }
     }
 }
