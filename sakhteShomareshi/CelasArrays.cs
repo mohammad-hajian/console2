@@ -29,12 +29,12 @@ namespace IEnumerabl
             //yield return Cl1[1];
             //yield return Cl1[2];
         }
-        public string Chapkon_2()
+        public string PrArr()
         {
             string Temp = string.Empty;
             foreach (CelasArray item in this)
             {
-                Temp += string.Format($"{item.Chapkon()}\r\n");
+                Temp += string.Format($"{item}\r\n");
             }
             return Temp;
         }

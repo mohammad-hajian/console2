@@ -20,14 +20,9 @@ namespace IEnumerabl
         public string Name { get; set; }
         public string Family { get; set; }
 
-        //public string Chapkon()
-        //{
-        //    return string.Format($"name is : {Name} and family is : {Family}");
-        //}
-        public string Chapkon()
+        public override string ToString()
         {
             return string.Format($"name is : {Name} and family is : {Family}");
-            //Console.WriteLine($"name is : {Name} and family is : {Family}");
         }
     }
 }

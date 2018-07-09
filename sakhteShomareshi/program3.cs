@@ -13,15 +13,15 @@ namespace IEnumerabl
         {
             //شمارشی کردن کلاس آرایه ها
             CelasArrays Arr1 = new CelasArrays();
-            Console.WriteLine(Arr1.Chapkon_2());
+            Console.WriteLine(Arr1.PrArr());
 
             //شمارشی کردن کلاس
             Celas Cl1 = new Celas();
-            Console.WriteLine(Cl1.Chapkon_3());
+            Console.WriteLine(Cl1.PrCelas());
 
             //شمارشی کردن متود
             Metod Mt1 = new Metod();
-            Console.WriteLine(Mt1.Chapkon_4());
+            Console.WriteLine(Mt1.PrMetod());
         }
     }
 }

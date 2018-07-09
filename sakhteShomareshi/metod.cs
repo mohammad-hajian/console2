@@ -22,7 +22,7 @@ namespace IEnumerabl
             //yield return "6";
             
         }
-        public string Chapkon_4()
+        public string PrMetod()
         {
             string Temp = string.Empty;
             foreach (string item in Test())

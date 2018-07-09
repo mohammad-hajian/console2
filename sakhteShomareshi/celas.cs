@@ -24,7 +24,7 @@ namespace IEnumerabl
             //yield return "2";
             //yield return "3";
         }
-        public string Chapkon_3()
+        public string PrCelas()
         {
             string Temp = string.Empty;
             foreach (string item in this)
