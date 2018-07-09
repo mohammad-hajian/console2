@@ -5,14 +5,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Collections;
 
-namespace sakhteShomareshi
+namespace IEnumerabl
 {
     class Metod
     {
         public IEnumerable Test()
         {
             string[] Str1 = new string[] { "4", "5", "6" };
-            foreach (var StrMetod in Str1)
+            foreach (string StrMetod in Str1)
             {
                 yield return StrMetod;
             }
@@ -20,6 +20,16 @@ namespace sakhteShomareshi
             //yield return "4";
             //yield return "5";
             //yield return "6";
-        }                                 
+            
+        }
+        public string Chapkon_4()
+        {
+            string Temp = string.Empty;
+            foreach (string item in Test())
+            {
+                Temp += string.Format($"{item}\n");
+            }
+            return Temp;
+        }
     }                                     
 }

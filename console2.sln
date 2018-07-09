@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test", "test\test.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterFace", "InterFace\InterFace.csproj", "{36313A3B-9881-4C3C-870E-967D4A5228FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sakhteShomareshi", "sakhteShomareshi\sakhteShomareshi.csproj", "{FC20E0D0-4652-4F65-8DBD-183EE13D3011}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IEnumerabl", "sakhteShomareshi\IEnumerabl.csproj", "{FC20E0D0-4652-4F65-8DBD-183EE13D3011}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace sakhteShomareshi
+namespace IEnumerabl
 {
     class CelasArray 
     {
@@ -24,9 +24,10 @@ namespace sakhteShomareshi
         //{
         //    return string.Format($"name is : {Name} and family is : {Family}");
         //}
-        public void Chapkon()
+        public string Chapkon()
         {
-            Console.WriteLine($"name is : {Name} and family is : {Family}");
+            return string.Format($"name is : {Name} and family is : {Family}");
+            //Console.WriteLine($"name is : {Name} and family is : {Family}");
         }
     }
 }

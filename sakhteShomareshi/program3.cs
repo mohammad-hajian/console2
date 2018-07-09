@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace sakhteShomareshi
+namespace IEnumerabl
 {
 
     class Program3
@@ -13,23 +13,15 @@ namespace sakhteShomareshi
         {
             //شمارشی کردن کلاس آرایه ها
             CelasArrays Arr1 = new CelasArrays();
-            foreach (CelasArray Arr in Arr1)
-            {
-                Arr.Chapkon();
-            }
+            Console.WriteLine(Arr1.Chapkon_2());
 
-            ////شمارشی کردن کلاس
-            //Celas Cl1 = new Celas();
-            //foreach (var ClProgram in Cl1)
-            //{
-            //    Console.WriteLine(ClProgram);
-            //}
-            ////شمارشی کردن متود
-            //Metod Mt1 = new Metod();
-            //foreach (var MtProgram in Mt1.Test())
-            //{
-            //    Console.WriteLine(MtProgram);
-            //}
+            //شمارشی کردن کلاس
+            Celas Cl1 = new Celas();
+            Console.WriteLine(Cl1.Chapkon_3());
+
+            //شمارشی کردن متود
+            Metod Mt1 = new Metod();
+            Console.WriteLine(Mt1.Chapkon_4());
         }
     }
 }

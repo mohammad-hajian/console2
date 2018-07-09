@@ -5,15 +5,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Collections;
 
-namespace sakhteShomareshi
+namespace IEnumerabl
 {
     class CelasArrays : IEnumerable
     {
         public CelasArrays()
         {
-            Cla1[0] = new CelasArray("mohammad","hajian");
-            Cla1[1] = new CelasArray("mahdi","hajian");
-            Cla1[2] = new CelasArray("javad","hajian");
+            Cla1[0] = new CelasArray("mohammad", "hajian");
+            Cla1[1] = new CelasArray("mahdi", "hajian");
+            Cla1[2] = new CelasArray("javad", "hajian");
         }
         CelasArray[] Cla1 = new CelasArray[3];
 
@@ -29,6 +29,14 @@ namespace sakhteShomareshi
             //yield return Cl1[1];
             //yield return Cl1[2];
         }
-
+        public string Chapkon_2()
+        {
+            string Temp = string.Empty;
+            foreach (CelasArray item in this)
+            {
+                Temp += string.Format($"{item.Chapkon()}\r\n");
+            }
+            return Temp;
+        }
     }
 }
