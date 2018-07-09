@@ -8,14 +8,14 @@ namespace inheritOverride
 {
     enum enamezdevaj
     {
-        mojarad=1,moteahel,bive
+        mojarad = 1, moteahel, bive
     }
     class person
     {
         public person()
         {
         }
-        public person(int age,string fullName,enamezdevaj ezdevaj)
+        public person(int age, string fullName, enamezdevaj ezdevaj)
         {
             Age = age;
             FullName = fullName;

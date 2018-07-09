@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace InterFace
 {
-    class Program
+    class Program2
     {
         static void Main(string[] args)
         {
