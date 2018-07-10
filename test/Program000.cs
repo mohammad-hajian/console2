@@ -16,7 +16,7 @@ namespace test
             yield return "mohammad";
         }
     }
-    class Program
+    class Program000
     {
         static void Main(string[] args)
         {

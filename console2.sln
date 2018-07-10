@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterFace", "InterFace\Inte
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IEnumerabl", "sakhteShomareshi\IEnumerabl.csproj", "{FC20E0D0-4652-4F65-8DBD-183EE13D3011}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IEquatableGeneric", "IEquatableGeneric\IEquatableGeneric.csproj", "{5343E789-CA31-4613-A542-5D23D941AA2F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileTxt", "File\FileTxt.csproj", "{A1AB7F04-31CC-475E-A3A2-70E52BC09395}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{FC20E0D0-4652-4F65-8DBD-183EE13D3011}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC20E0D0-4652-4F65-8DBD-183EE13D3011}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC20E0D0-4652-4F65-8DBD-183EE13D3011}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5343E789-CA31-4613-A542-5D23D941AA2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5343E789-CA31-4613-A542-5D23D941AA2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5343E789-CA31-4613-A542-5D23D941AA2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5343E789-CA31-4613-A542-5D23D941AA2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1AB7F04-31CC-475E-A3A2-70E52BC09395}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1AB7F04-31CC-475E-A3A2-70E52BC09395}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1AB7F04-31CC-475E-A3A2-70E52BC09395}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1AB7F04-31CC-475E-A3A2-70E52BC09395}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
