@@ -39,8 +39,11 @@ namespace FileTxt
             }
             finally
             {
-                oSW.Close();
-                oSW.Dispose();
+                if (oSW != null)
+                {
+                    oSW.Close();
+                    oSW.Dispose();
+                }
             }
             #endregion
 
@@ -59,8 +62,11 @@ namespace FileTxt
             }
             finally
             {
-                oSR.Close();
-                oSR.Dispose();
+                if (oSR != null)
+                {
+                    oSR.Close();
+                    oSR.Dispose();
+                }
             }
             #endregion
 

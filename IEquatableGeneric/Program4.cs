@@ -19,7 +19,7 @@ namespace IEquatableGeneric
             Console.WriteLine(P1.GetHashCode());
             Console.WriteLine(P2.GetHashCode());
 
-
+            //Generic
             Console.WriteLine("----------------------");
             GenericStart<string> G1 = new GenericStart<string>();
             G1.Method2("mohammad");
