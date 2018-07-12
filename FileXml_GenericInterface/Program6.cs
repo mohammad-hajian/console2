@@ -36,13 +36,15 @@ namespace FileXml_GenericInterface
             //}
             #endregion
 
+            //Listt olistt = new Listt("d:\\mohammad.xml");
             Listt olistt = new Listt();
             olistt.Add(new Person("mohammad","hajian"));
             Person oPerson = new Person("mohsen","bagheri");
             olistt.Add(oPerson);
-            olistt.Save("d:\\");
-            olistt.Load("d:\\");
+            olistt.Save();
+            olistt.Load();
             Console.WriteLine(olistt);
+
         }
 
     }

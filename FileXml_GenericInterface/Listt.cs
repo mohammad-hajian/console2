@@ -12,6 +12,15 @@ namespace FileXml_GenericInterface
 {
     public class Listt : ISerializerGeneric<Person>
     {
-
+        public Listt()
+        {
+        }
+        /// <summary>
+        /// Example : "d:\\mohammad.xml"
+        /// </summary>
+        /// <param name="spath"></param>
+        public Listt(string spath) : base(spath)
+        {
+        }
     }
 }

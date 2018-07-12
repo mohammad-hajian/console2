@@ -12,12 +12,20 @@ namespace FileXml_GenericInterface
 {
     public class ISerializerGeneric<G> : IList<G>
     {
+        string SPath = string.Empty;
         XmlSerializer oXS2;
         public ISerializerGeneric()
         {
             oXS2 = new XmlSerializer(this.GetType(), new XmlRootAttribute(string.Format($"{ typeof(G).Name }s")));
+            //با کد پایین، فایل را در پوشه خود پروژه میسازد
+            //SPath = string.Format($"{Environment.CurrentDirectory}{typeof(G).Name}.xml");
+            SPath = "d:\\defaultXml.xml";
         }
-
+        public ISerializerGeneric(string spath)
+        {
+            oXS2 = new XmlSerializer(this.GetType(), new XmlRootAttribute(string.Format($"{ typeof(G).Name }s")));
+            SPath = spath;
+        }
 
         List<G> InnereList = new List<G>();
         public G this[int index]
@@ -32,15 +40,25 @@ namespace FileXml_GenericInterface
                 InnereList[index] = value;
             }
         }
-        public void Save(string SPath)
+        public void Save()
         {
-            using (StreamWriter oSW2 = new StreamWriter(SPath))//'d:\' is denied. خخخخخ
-
+            try
             {
-                oXS2.Serialize(oSW2, this);
+                using (StreamWriter oSW2 = new StreamWriter(SPath))
+
+                {
+                    oXS2.Serialize(oSW2, this);
+                }
             }
+            catch (Exception xe)
+            {
+
+                Console.WriteLine($"************ {xe.Message}");
+                Console.WriteLine("************ nam va pasvande file ra niz vared konid(agar vared nakardid)");
+            }
+
         }
-        public void Load(string SPath)
+        public void Load()
         {
             StreamReader oSR2 = new StreamReader(SPath);
             try
@@ -62,13 +80,13 @@ namespace FileXml_GenericInterface
         {
             InnereList.Add(item);
         }
-        public void AddItem(G item, string SPath)
+        public void AddItem(G item)
         {
             if (File.Exists(SPath))
             {
-                Load(SPath);
+                Load();
                 InnereList.Add(item);
-                Save(SPath);
+                Save();
             }
         }
         IEnumerator IEnumerable.GetEnumerator()
@@ -116,9 +134,6 @@ namespace FileXml_GenericInterface
         {
             throw new NotImplementedException();
         }
-
-
-
         public int IndexOf(G item)
         {
             throw new NotImplementedException();
