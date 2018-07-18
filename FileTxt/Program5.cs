@@ -11,7 +11,7 @@ namespace FileTxt
     {
         static void Main(string[] args)
         {
-
+            Class1
             #region Get Files & Folders
             //foreach (string a1 in Directory.GetFiles(@"e:\"))
             //{
